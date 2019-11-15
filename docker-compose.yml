@@ -1,0 +1,10 @@
+version: '3.6'
+services:
+  zeugnisabfrage:
+    image: docker.pkg.github.com/juliansauer/zeugnisabfragetudortmund/zeugnisabfragetudortmund:latest
+    restart: always
+    environment:
+      ABSCHLUSS: BA
+      MATRIKELNUMMER: 123456
+      TELEGRAM_TOKEN: 123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789
+      TELEGRAM_CHAT_ID: 123456789
